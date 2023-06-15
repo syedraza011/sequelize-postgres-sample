@@ -1,0 +1,25 @@
+{
+    "name": "sequelize-postgres-sample",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node ./src/app.js",
+        "start:watch": "nodemon ./src/app.js",
+        "start:sequelize": "nodemon ./src/orm-app.js",
+        "start:db": "docker compose -f ./docker/postgres.yml up -d"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "nodemon": "^2.0.20",
+        "pg": "^8.8.0",
+        "pg-hstore": "^2.3.4",
+        "sequelize": "^6.28.0"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true,
+        "printWidth": 120
+    }
+}
